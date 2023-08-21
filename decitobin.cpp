@@ -6,10 +6,10 @@ int main()
     cin>>n;
     while(n>0)
    {
-     num=n/2;
+
      k=n%2;
      j=j*10+k;
-     n=num;
+     n=n/2;
    }
    while(j>0)
    {

@@ -33,6 +33,7 @@ if(flag==n)
 {
     cout<<"Palindrome";
 }
+
 else{
     cout<<"Not palindrome";
 }
