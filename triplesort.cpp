@@ -22,22 +22,22 @@ int main()
         {
             j--;
         }
-        if(arr[i]==0 && arr[j]==1)
+        if(arr[i]==0 && arr[j]==1 && i<j)
         {
             i++;
             j--;
         }
-        else if(arr[i]==1 && arr[j]==0)
+        else if(arr[i]==1 && arr[j]==0 && i<j)
         {
             swap(arr[i],arr[j]);
             i++;
             j--;
         }
-        else if(arr[i]==1)
+        else if(arr[i]==1 && i<j)
         {
             j--;
         }
-        else{
+        else if(arr[i]==0){
             i++;
         }
 
@@ -50,23 +50,32 @@ int main()
         {
             i++;
         }
-        if(arr[i]==2 && arr[j]==1)
+        if(arr[i]==2 && arr[j]==1 && i<j)
         {
+            if(arr[i+1]==0)
+            {
+                swap(arr[i],arr[i+1]);
+                swap(arr[i+1],arr[j]);
+                continue;
+            }
             swap(arr[i],arr[j]);
             i++;
             j--;
         }
-        else if(arr[i]==1 && arr[j]==2)
+        else if(arr[i]==1 && arr[j]==2 && i<j)
         {
             i++;
             j--;
         }
-        else if(i==2)
+        else if(arr[i]==2 && i<j)
         {
             j--;
+        }
+        else if(arr[i]==1 && arr[i+1]!=0){
+            i++;
         }
         else{
-            i++;
+            swap(arr[i],arr[i+1]);
         }
 
     }
