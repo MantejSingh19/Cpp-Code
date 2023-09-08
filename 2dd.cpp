@@ -16,7 +16,7 @@ int main()
         }
        else{
 
-        for(j=2;j>=0;j--)
+        for(j=2;j>= 0;j--)
        {
            cout<<arr[j][i];
        }
