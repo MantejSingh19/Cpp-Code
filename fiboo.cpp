@@ -18,11 +18,6 @@ int fibo(int b,int a,int n,int cnt)
     cnt++;
     int summ=a+b;
     fibo(a,summ,n,cnt);
-    if(cnt==6)
-    {
-         cout<<summ<<endl;
-
-    }
-
+    cout<<summ<<endl;
     return 0;
 }
