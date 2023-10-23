@@ -1,6 +1,3 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
 #include<bits/stdc++.h>
 using namespace std;
 int func(int ind,vector<int> &arr,vector<int> &ds,int target)
